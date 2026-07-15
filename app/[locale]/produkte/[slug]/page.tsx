@@ -35,9 +35,9 @@ export default async function ProductPage({ params }: Props) {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a3a27]/80 to-transparent" />
-        <div className="absolute bottom-0 left-0 p-8 text-white">
-          <h1 className="font-serif text-3xl md:text-5xl font-bold">{product.name[locale]}</h1>
-          <p className="text-white/80 mt-2 max-w-xl">{product.shortDesc[locale]}</p>
+        <div className="absolute bottom-0 left-0 p-4 sm:p-8 text-white">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-5xl font-bold">{product.name[locale]}</h1>
+          <p className="text-white/80 mt-1 max-w-xl text-sm sm:text-base">{product.shortDesc[locale]}</p>
         </div>
       </section>
 

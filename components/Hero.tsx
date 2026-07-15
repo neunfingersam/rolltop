@@ -22,16 +22,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/70" />
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-3xl mx-auto px-4">
-        <p className="text-primary-light/80 text-sm font-medium uppercase tracking-[0.2em] mb-4">
+        <p className="text-primary-light/80 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-3">
           Rolltop Insektenschutzsysteme GmbH
         </p>
-        <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
           {t('headline')}
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+        <p className="text-base md:text-xl text-white/80 mb-6 max-w-2xl mx-auto">
           {t('subheadline')}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-24">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6 sm:mt-16">
           <Link
             href={`/${locale}/kontakt`}
             className="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-lg"

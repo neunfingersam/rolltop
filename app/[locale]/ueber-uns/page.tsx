@@ -27,7 +27,7 @@ export default async function UeberUnsPage({ params }: Props) {
           <h2 className="font-serif text-2xl font-bold text-text-main mb-10 text-center">{t('team_title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Heinz */}
-            <div className="bg-background rounded-2xl p-6 border border-border">
+            <div className="bg-background rounded-2xl p-6 border border-border flex flex-col items-center sm:items-start text-center sm:text-left">
               <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
                 <Image src="/images/Heinz Hermann.png" alt="Heinz Hermann" fill className="object-cover" />
               </div>
@@ -36,7 +36,7 @@ export default async function UeberUnsPage({ params }: Props) {
               <p className="text-sm text-text-muted leading-relaxed">{t('heinz_desc')}</p>
             </div>
             {/* Dario */}
-            <div className="bg-background rounded-2xl p-6 border border-border">
+            <div className="bg-background rounded-2xl p-6 border border-border flex flex-col items-center sm:items-start text-center sm:text-left">
               <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
                 <Image src="/images/Dario Hermann.png" alt="Dario Hermann" fill className="object-cover" />
               </div>

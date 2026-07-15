@@ -11,8 +11,8 @@ export default async function KontaktPage({ params }: Props) {
   return (
     <div className="pt-24">
       {/* Header */}
-      <section className="bg-primary-light py-16 text-center">
-        <h1 className="font-serif text-4xl md:text-5xl font-bold text-text-main mb-2">{t('title')}</h1>
+      <section className="bg-primary-light py-10 md:py-16 text-center">
+        <h1 className="font-serif text-3xl md:text-5xl font-bold text-text-main mb-2">{t('title')}</h1>
         <p className="text-text-muted">{t('subtitle')}</p>
       </section>
 
