@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "cta": "Request consultation"
+  },
+  "hero": {
+    "headline": "Enjoy your home — undisturbed",
+    "subheadline": "Professional insect protection for windows, doors & more. Consulting, installation and repair since 2010.",
+    "cta_primary": "Request consultation",
+    "cta_secondary": "Discover products"
+  },
+  "usps": {
+    "eco_title": "Eco-Friendly",
+    "eco_desc": "No chemicals — without harming insects that play a vital role in our ecosystem.",
+    "quality_title": "Professional Installation",
+    "quality_desc": "Years of experience and high quality standards in consulting, installation and repair.",
+    "since_title": "Since 2010",
+    "since_desc": "Family business from Rotkreuz — reliable, fair and personal."
+  },
+  "products": {
+    "section_title": "Our Products",
+    "section_desc": "Tailored insect protection solutions for every situation.",
+    "more": "Learn more"
+  },
+  "about": {
+    "section_title": "About Us",
+    "text": "Rolltop Insektenschutzsysteme GmbH was founded in 2010 by Heinz Hermann. With experience from the construction and sheet metal sector and in-depth knowledge from his time at Rollfix Systeme AG, he and his son Dario offer professional solutions for every need.",
+    "cta": "More about us",
+    "badge1": "Founded 2010",
+    "badge2": "Family business",
+    "badge3": "Rotkreuz, Switzerland"
+  },
+  "colors": {
+    "section_title": "5 Standard Colors",
+    "section_desc": "Special finishes and custom shapes available on request.",
+    "special": "Special fabrics like Antipoll available on request.",
+    "white": "White RAL 9016",
+    "brown": "Brown RAL 8014",
+    "silver": "Silver anodized",
+    "bronze": "Bronze lacquered",
+    "darkgray": "Dark gray RAL 7016"
+  },
+  "contact": {
+    "section_title": "Request a consultation",
+    "section_desc": "Free and non-binding consultation.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "product": "Product",
+    "product_placeholder": "Please select...",
+    "message": "Message",
+    "submit": "Send request",
+    "success": "Thank you! We will be in touch soon.",
+    "error": "Something went wrong. Please try again.",
+    "address_label": "Address",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "hours_label": "Opening hours",
+    "address": "Holzhäusernstrasse 32B, 6343 Rotkreuz",
+    "hours": "Mon–Fri 07:30–12:00 | 13:00–17:30"
+  },
+  "footer": {
+    "tagline": "Professional insect protection since 2010.",
+    "copyright": "© 2026 Rolltop Insektenschutzsysteme GmbH"
+  },
+  "product_detail": {
+    "variants": "Variants",
+    "dimensions": "Dimensions",
+    "colors": "Colors",
+    "fabric": "Fabric",
+    "fabric_desc": "Fiberglass fabric in gray or black — free of harmful plasticizers.",
+    "cta": "Request consultation now"
+  },
+  "about_page": {
+    "title": "About Us",
+    "history_title": "Our Story",
+    "history": "Rolltop Insektenschutzsysteme GmbH was founded in 2010 by Heinz Hermann. With years of experience in construction and sheet metal work, as well as in-depth product knowledge from his time at Rollfix Systeme AG, he brings deep expertise to every project.",
+    "team_title": "Our Team",
+    "heinz_title": "Founder & Managing Director",
+    "heinz_desc": "Years of experience in construction and sheet metal, formerly at Rollfix Systeme AG.",
+    "dario_title": "Installation & Customer Service",
+    "dario_desc": "Joined in 2017. Trained sanitary installer with strong technical skills.",
+    "values_title": "Our Values",
+    "val1_title": "Personal Consulting",
+    "val1_desc": "We take the time to understand your individual situation.",
+    "val2_title": "Fair Pricing",
+    "val2_desc": "Fast service at transparent, fair prices.",
+    "val3_title": "Quality Work",
+    "val3_desc": "Professional installation to the highest standards.",
+    "cta": "Request consultation now"
+  },
+  "contact_page": {
+    "title": "Contact",
+    "subtitle": "We look forward to hearing from you."
+  }
+}

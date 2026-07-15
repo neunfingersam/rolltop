@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Produkte",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "cta": "Beratung anfragen"
+  },
+  "hero": {
+    "headline": "Ihr Zuhause — ungestört geniessen",
+    "subheadline": "Professioneller Insektenschutz für Fenster, Türen & mehr. Beratung, Montage und Reparatur seit 2010.",
+    "cta_primary": "Beratung anfragen",
+    "cta_secondary": "Produkte entdecken"
+  },
+  "usps": {
+    "eco_title": "Umweltfreundlich",
+    "eco_desc": "Ohne Chemie — ohne den Insekten zu schaden, die eine wichtige Rolle in unserem Ökosystem spielen.",
+    "quality_title": "Fachgerechte Montage",
+    "quality_desc": "Jahrelange Erfahrung und hohe Qualitätsstandards bei Beratung, Montage und Reparatur.",
+    "since_title": "Seit 2010",
+    "since_desc": "Familienunternehmen aus Rotkreuz — zuverlässig, fair und persönlich."
+  },
+  "products": {
+    "section_title": "Unsere Produkte",
+    "section_desc": "Massgeschneiderte Insektenschutzlösungen für jede Situation.",
+    "more": "Mehr erfahren"
+  },
+  "about": {
+    "section_title": "Über Uns",
+    "text": "Die Rolltop Insektenschutzsysteme GmbH wurde 2010 von Heinz Hermann gegründet. Mit Erfahrung aus dem Bau- und Spenglereibereich und fundiertem Wissen aus seiner Zeit bei Rollfix Systeme AG bietet er gemeinsam mit Sohn Dario professionelle Lösungen für jeden Bedarf.",
+    "cta": "Mehr über uns",
+    "badge1": "Gegründet 2010",
+    "badge2": "Familienunternehmen",
+    "badge3": "Rotkreuz, Schweiz"
+  },
+  "colors": {
+    "section_title": "5 Standardfarben",
+    "section_desc": "Sonderlackierungen und Sonderformen auf Anfrage.",
+    "special": "Sondergewebe wie Antipoll auf Anfrage erhältlich.",
+    "white": "Weiss RAL 9016",
+    "brown": "Braun RAL 8014",
+    "silver": "Silber eloxiert",
+    "bronze": "Bronze lackiert",
+    "darkgray": "Dunkelgrau RAL 7016"
+  },
+  "contact": {
+    "section_title": "Beratung anfragen",
+    "section_desc": "Kostenlose und unverbindliche Beratung.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "product": "Produkt",
+    "product_placeholder": "Bitte wählen...",
+    "message": "Nachricht",
+    "submit": "Anfrage senden",
+    "success": "Vielen Dank! Wir melden uns bald bei Ihnen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "address_label": "Adresse",
+    "phone_label": "Telefon",
+    "email_label": "E-Mail",
+    "hours_label": "Öffnungszeiten",
+    "address": "Holzhäusernstrasse 32B, 6343 Rotkreuz",
+    "hours": "Mo–Fr 07:30–12:00 | 13:00–17:30"
+  },
+  "footer": {
+    "tagline": "Professioneller Insektenschutz seit 2010.",
+    "copyright": "© 2026 Rolltop Insektenschutzsysteme GmbH"
+  },
+  "product_detail": {
+    "variants": "Varianten",
+    "dimensions": "Masse",
+    "colors": "Farben",
+    "fabric": "Gewebe",
+    "fabric_desc": "Fiberglasgewebe grau oder schwarz — frei von gesundheitsschädlichen Weichmachern.",
+    "cta": "Jetzt Beratung anfragen"
+  },
+  "about_page": {
+    "title": "Über Uns",
+    "history_title": "Unsere Geschichte",
+    "history": "Die Rolltop Insektenschutzsysteme GmbH wurde 2010 von Heinz Hermann gegründet. Mit jahrelanger Erfahrung im Bau- und Spenglereibereich sowie fundiertem Fachwissen aus seiner Zeit bei Rollfix Systeme AG bringt er tiefes Produktwissen und handwerkliche Kompetenz mit.",
+    "team_title": "Unser Team",
+    "heinz_title": "Gründer & Geschäftsführer",
+    "heinz_desc": "Jahrelange Erfahrung im Bau- und Spenglereibereich, ehemals Rollfix Systeme AG.",
+    "dario_title": "Montage & Kundenservice",
+    "dario_desc": "Seit 2017 im Betrieb. Gelernter Sanitärinstallateur mit handwerklichem Können.",
+    "values_title": "Unsere Werte",
+    "val1_title": "Persönliche Beratung",
+    "val1_desc": "Wir nehmen uns Zeit für Ihre individuelle Situation.",
+    "val2_title": "Fairer Preis",
+    "val2_desc": "Schneller Service zu transparenten, fairen Preisen.",
+    "val3_title": "Qualitätsarbeit",
+    "val3_desc": "Fachgerechte Montage nach höchsten Standards.",
+    "cta": "Jetzt Beratung anfragen"
+  },
+  "contact_page": {
+    "title": "Kontakt",
+    "subtitle": "Wir freuen uns auf Ihre Anfrage."
+  }
+}
