@@ -10,12 +10,20 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a1a10]">
-      {/* Banner — nur auf Desktop sichtbar */}
+      {/* Banner Desktop */}
       <Image
         src="/images/BannerNeu.jpg"
         alt="Rolltop Insektenschutz"
         fill
         className="hidden md:block object-cover object-center"
+        priority
+      />
+      {/* Banner Mobile */}
+      <Image
+        src="/images/BannerMobile.jpg"
+        alt="Rolltop Insektenschutz"
+        fill
+        className="md:hidden object-cover object-center"
         priority
       />
       {/* Overlay */}
