@@ -1,8 +1,20 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 
 type Props = { params: { locale: string } }
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const isDE = params.locale === 'de'
+  return {
+    title: isDE ? 'Über uns – Rolltop Insektenschutz seit 2010' : 'About Us – Rolltop Insect Protection since 2010',
+    description: isDE
+      ? 'Heinz und Dario Hermann – Ihr Familienunternehmen für Insektenschutz in Rotkreuz, Zug. Seit 2010 stehen wir für Qualität, Beratung und Kundennähe.'
+      : 'Heinz and Dario Hermann – Your family business for insect protection in Rotkreuz, Zug. Quality and personal service since 2010.',
+    alternates: { canonical: `https://rolltop.ch/${params.locale}/ueber-uns` },
+  }
+}
 
 export default async function UeberUnsPage({ params }: Props) {
   const locale = params.locale as 'de' | 'en'

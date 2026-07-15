@@ -1,8 +1,28 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
+import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { getProduct, PRODUCTS, COLOR_SWATCHES } from '@/lib/products'
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const product = getProduct(params.slug)
+  if (!product) return {}
+  const locale = params.locale as 'de' | 'en'
+  const name = product.name[locale]
+  const desc = product.shortDesc[locale]
+  return {
+    title: `${name} – Insektenschutz Schweiz`,
+    description: desc,
+    alternates: { canonical: `https://rolltop.ch/${locale}/produkte/${params.slug}` },
+    openGraph: {
+      title: `${name} | Rolltop`,
+      description: desc,
+      url: `https://rolltop.ch/${locale}/produkte/${params.slug}`,
+      images: [{ url: product.heroImage }],
+    },
+  }
+}
 
 export function generateStaticParams() {
   const locales = ['de', 'en']

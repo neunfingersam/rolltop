@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import ContactForm from '@/components/ContactForm'
 
 type Props = { params: { locale: string } }
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const isDE = params.locale === 'de'
+  return {
+    title: isDE ? 'Kontakt – Kostenlose Beratung Insektenschutz' : 'Contact – Free Consultation Insect Protection',
+    description: isDE
+      ? 'Jetzt Beratung anfragen. Rolltop GmbH, Holzhäusernstrasse 32B, 6343 Rotkreuz. Tel: +41 76 388 60 70. Insektenschutz für die ganze Zentralschweiz.'
+      : 'Request a free consultation. Rolltop GmbH, Holzhäusernstrasse 32B, 6343 Rotkreuz. Tel: +41 76 388 60 70.',
+    alternates: { canonical: `https://rolltop.ch/${params.locale}/kontakt` },
+  }
+}
 
 export default async function KontaktPage({ params }: Props) {
   const locale = params.locale as 'de' | 'en'
