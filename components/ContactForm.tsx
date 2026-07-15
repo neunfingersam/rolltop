@@ -1,6 +1,8 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useFormState, useFormStatus } from 'react-dom'
+import { useSearchParams } from 'next/navigation'
 import { sendContactEmail, type ContactState } from '@/app/actions/contact'
 import { useTranslations, useLocale } from 'next-intl'
 import { PRODUCTS } from '@/lib/products'
@@ -20,10 +22,12 @@ function SubmitButton({ label }: { label: string }) {
   )
 }
 
-export default function ContactForm() {
+function ContactFormInner() {
   const t = useTranslations('contact')
   const locale = useLocale() as 'de' | 'en'
   const [state, formAction] = useFormState(sendContactEmail, initialState)
+  const searchParams = useSearchParams()
+  const preselectedProduct = searchParams.get('produkt') ?? ''
 
   if (state.status === 'success') {
     return (
@@ -69,11 +73,12 @@ export default function ContactForm() {
           <label className="block text-sm font-medium text-text-main mb-1">{t('product')}</label>
           <select
             name="product"
+            defaultValue={preselectedProduct}
             className="w-full border border-border rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 bg-background"
           >
             <option value="">{t('product_placeholder')}</option>
             {PRODUCTS.map((p) => (
-              <option key={p.slug} value={p.name.de}>
+              <option key={p.slug} value={p.name[locale]}>
                 {p.name[locale]}
               </option>
             ))}
@@ -97,5 +102,13 @@ export default function ContactForm() {
 
       <SubmitButton label={t('submit')} />
     </form>
+  )
+}
+
+export default function ContactForm() {
+  return (
+    <Suspense fallback={null}>
+      <ContactFormInner />
+    </Suspense>
   )
 }

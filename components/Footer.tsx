@@ -46,7 +46,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">Kontakt</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">{tNav('contact')}</p>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>Holzhäusernstrasse 32B</li>
             <li>6343 Rotkreuz</li>

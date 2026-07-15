@@ -29,7 +29,7 @@ export async function sendContactEmail(
   const message = formData.get('message') as string
 
   if (!name || !email || !message) {
-    return { status: 'error', message: 'Bitte füllen Sie alle Pflichtfelder aus.' }
+    return { status: 'error' }
   }
 
   const safeName = escapeHtml(name)
