@@ -91,14 +91,14 @@ export default async function ProductPage({ params }: Props) {
               <div className="w-16 h-16 rounded-xl overflow-hidden border border-border shadow-sm">
                 <Image
                   src={swatch.image}
-                  alt={tColors(swatch.key as any)}
+                  alt={tColors(swatch.key as Parameters<typeof tColors>[0])}
                   width={64}
                   height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
               <span className="text-xs text-text-muted text-center max-w-[70px]">
-                {tColors(swatch.key as any)}
+                {tColors(swatch.key as Parameters<typeof tColors>[0])}
               </span>
             </div>
           ))}

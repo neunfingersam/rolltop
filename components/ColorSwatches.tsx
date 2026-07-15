@@ -21,14 +21,14 @@ export default function ColorSwatches() {
               <div className="w-20 h-20 rounded-xl overflow-hidden border border-border shadow-sm">
                 <Image
                   src={swatch.image}
-                  alt={t(swatch.key as any)}
+                  alt={t(swatch.key as Parameters<typeof t>[0])}
                   width={80}
                   height={80}
                   className="w-full h-full object-cover"
                 />
               </div>
               <span className="text-xs text-text-muted text-center max-w-[80px]">
-                {t(swatch.key as any)}
+                {t(swatch.key as Parameters<typeof t>[0])}
               </span>
             </div>
           ))}
