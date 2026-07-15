@@ -85,17 +85,21 @@ export default function Navbar({ locale }: { locale: string }) {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
-        <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
-          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            {menuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
+        {/* Mobile: Sprache + Hamburger */}
+        <div className="md:hidden flex items-center gap-3">
+          <Link href={switchPath} className="text-xs font-medium uppercase tracking-wide text-white/70 hover:text-white transition-colors">
+            {otherLocale}
+          </Link>
+          <button className="text-white" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {menuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
 
       {/* Mobile menu */}
       {menuOpen && (
@@ -114,7 +118,6 @@ export default function Navbar({ locale }: { locale: string }) {
           ))}
           <Link href={`/${locale}/ueber-uns`} className="text-sm font-medium text-white py-2" onClick={() => setMenuOpen(false)}>{t('about')}</Link>
           <Link href={`/${locale}/kontakt`} className="text-sm font-medium text-white py-2" onClick={() => setMenuOpen(false)}>{t('contact')}</Link>
-          <Link href={switchPath} className="text-xs text-white/50 uppercase">{otherLocale}</Link>
           <Link
             href={`/${locale}/kontakt`}
             className="bg-primary text-white text-sm font-medium px-5 py-2 rounded-full text-center"
