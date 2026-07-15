@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
 type Props = { params: { locale: string } }
@@ -27,8 +28,8 @@ export default async function UeberUnsPage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Heinz */}
             <div className="bg-background rounded-2xl p-6 border border-border">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl font-bold mb-4">
-                H
+              <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
+                <Image src="/images/Heinz Hermann.png" alt="Heinz Hermann" fill className="object-cover" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-text-main">Heinz Hermann</h3>
               <p className="text-sm text-primary font-medium mb-3">{t('heinz_title')}</p>
@@ -36,8 +37,8 @@ export default async function UeberUnsPage({ params }: Props) {
             </div>
             {/* Dario */}
             <div className="bg-background rounded-2xl p-6 border border-border">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl font-bold mb-4">
-                D
+              <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4">
+                <Image src="/images/Dario Hermann.png" alt="Dario Hermann" fill className="object-cover" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-text-main">Dario Hermann</h3>
               <p className="text-sm text-primary font-medium mb-3">{t('dario_title')}</p>

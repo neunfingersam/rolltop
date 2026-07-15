@@ -38,7 +38,7 @@ export default function AboutSection() {
         {/* Image */}
         <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-md">
           <Image
-            src="/images/bannerkorrekt.png"
+            src="/images/team.jpg"
             alt="Rolltop Team"
             fill
             className="object-cover"

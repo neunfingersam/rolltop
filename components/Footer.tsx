@@ -16,11 +16,11 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Image
-            src="/images/21-04-07-Autologo-Normal.jpg"
+            src="/images/logo-transparent.png"
             alt="Rolltop"
             width={120}
-            height={40}
-            className="h-10 w-auto object-contain mb-3 brightness-0 invert"
+            height={120}
+            className="h-10 w-auto object-contain mb-3"
           />
           <p className="text-sm text-gray-400">{t('tagline')}</p>
         </div>
