@@ -36,8 +36,6 @@ export default function Navbar({ locale }: { locale: string }) {
           <Link href={`/${locale}`} className="text-sm font-medium text-white/90 hover:text-white transition-colors">
             {t('home')}
           </Link>
-
-          {/* Products dropdown */}
           <div
             className="relative"
             onMouseEnter={() => setDropdownOpen(true)}
@@ -63,7 +61,6 @@ export default function Navbar({ locale }: { locale: string }) {
               </div>
             )}
           </div>
-
           <Link href={`/${locale}/ueber-uns`} className="text-sm font-medium text-white/90 hover:text-white transition-colors">
             {t('about')}
           </Link>
@@ -72,15 +69,12 @@ export default function Navbar({ locale }: { locale: string }) {
           </Link>
         </nav>
 
-        {/* Right side */}
+        {/* Desktop: Sprache + CTA */}
         <div className="hidden md:flex items-center gap-4">
           <Link href={switchPath} className="text-xs font-medium uppercase tracking-wide text-white/70 hover:text-white transition-colors">
             {otherLocale}
           </Link>
-          <Link
-            href={`/${locale}/kontakt`}
-            className="text-sm font-medium px-5 py-2 rounded-full bg-primary hover:bg-primary-dark text-white transition-colors"
-          >
+          <Link href={`/${locale}/kontakt`} className="text-sm font-medium px-5 py-2 rounded-full bg-primary hover:bg-primary-dark text-white transition-colors">
             {t('cta')}
           </Link>
         </div>
@@ -100,6 +94,7 @@ export default function Navbar({ locale }: { locale: string }) {
             </svg>
           </button>
         </div>
+      </div>
 
       {/* Mobile menu */}
       {menuOpen && (
@@ -118,11 +113,7 @@ export default function Navbar({ locale }: { locale: string }) {
           ))}
           <Link href={`/${locale}/ueber-uns`} className="text-sm font-medium text-white py-2" onClick={() => setMenuOpen(false)}>{t('about')}</Link>
           <Link href={`/${locale}/kontakt`} className="text-sm font-medium text-white py-2" onClick={() => setMenuOpen(false)}>{t('contact')}</Link>
-          <Link
-            href={`/${locale}/kontakt`}
-            className="bg-primary text-white text-sm font-medium px-5 py-2 rounded-full text-center"
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link href={`/${locale}/kontakt`} className="bg-primary text-white text-sm font-medium px-5 py-2 rounded-full text-center" onClick={() => setMenuOpen(false)}>
             {t('cta')}
           </Link>
         </div>
