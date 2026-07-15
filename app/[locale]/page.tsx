@@ -3,7 +3,7 @@ import UspSection from '@/components/UspSection'
 import ProductGrid from '@/components/ProductGrid'
 import AboutSection from '@/components/AboutSection'
 import ColorSwatches from '@/components/ColorSwatches'
-// ContactSection will be added in Task 7
+import ContactSection from '@/components/ContactSection'
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
       <ProductGrid />
       <AboutSection />
       <ColorSwatches />
-      {/* <ContactSection /> — placeholder for Task 7 */}
+      <ContactSection />
     </>
   )
 }
